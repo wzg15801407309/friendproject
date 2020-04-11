@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>蚂蚁搬家</title>
+    <link rel="stylesheet" href="/static/css/base.css" />
+    <link rel="stylesheet" href="/static/css/iconfont.css" />
+    <script src="/static/js/base.js"></script>
+    <script src="/static/js/qrcode.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script>
+		window.onresize = function(){rem();}
+	    rem();
+	    // 进行rem的计算 因为是已720px为基准进行计算的，所以为了方便，把1rem等于100px
+	    function rem() {
+	      let width = document.body.clientWidth;//获取屏幕宽度
+        let fontSize = document.getElementsByTagName('html')[0].style.fontSize = width / 7.5 + "px";
+        console.log(fontSize);
+	    }
+	</script>
+</html>
